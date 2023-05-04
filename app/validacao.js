@@ -18,7 +18,12 @@ function validaChute(chute){
 
     if(numero === numeroSorteado){
         document.body.innerHTML = `
-        
+        <div class="acertou">
+            <h2>Você acertou!!!</h2>
+            <h3>O número secreto era ${numeroSorteado}</h3>
+
+            <button id="reset" class="btn-reset">Jogar novamente</button>
+        </div>
         `
     } else if(numero < numeroSorteado){
         elementoChute.innerHTML += `

@@ -20,12 +20,24 @@
 </head>
 
 <body>
-    <h1>Acerte o número secreto</h1>
-    <h3>O número secreto está entre <span id="menor-valor"></span> e <span id="maior-valor"></span></h3>
-    <div id="chute" class="mensagem">
 
+    <div id="descricao" class="descricao">
+        <p>Este é um jogo de adivinhação que utiliza reconhecimento de voz.</p>
+        <p>Você deverá acerta o número secreto seguindo as dicas que aparecem abaixo do seu palpite.</p>
+        <button id="btn-inicia-jogo" class="btn-iniciar">Iniciar jogo</button>
     </div>
-    
+
+
+    <div id= "jogo" class="jogo">
+        <h1>Acerte o número secreto</h1>
+
+        <h3>O número secreto está entre <span id="menor-valor"></span> e <span id="maior-valor"></span></h3>
+        <div id="chute" class="mensagem">
+
+        </div>
+    </div>
+
+    <script src="./app/iniciaJogo.js"></script>
     <script src="./app/sorteiaNumero.js"></script>
     <script src="./app/reconhecimentoDeVoz.js"></script>
     <script src="./app/validacao.js"></script>
